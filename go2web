@@ -249,8 +249,8 @@ def main():
     parser.add_argument("-u", "--url", help="Make an HTTP request to the specified URL")
     parser.add_argument("-s", "--search", help="Search term to look up")
     parser.add_argument("--link", type=int, help="Access a specific link number from search results")
-    # parser.add_argument("--json", action="store_true", help="Request JSON content")
-    # parser.add_argument("--html", action="store_true", help="Request HTML content")
+    parser.add_argument("--json", action="store_true", help="Request JSON content")
+    parser.add_argument("--html", action="store_true", help="Request HTML content")
     
     args = parser.parse_args()
     # Store last search results for link navigation
